@@ -77,7 +77,7 @@ Meta-Variables "QUERY_STRING", "CONTENT_LENGTH" and
 <h1>Specification</h1>
 <pre>R6RS library name</pre>
 The following two procedures belong to the R6RS library named (srfi :98 os-environment-variables).
-<pre>Function: get-environment-variable name</pre>Returns the value of
+<pre id="get-environment-variable">Function: get-environment-variable name</pre>Returns the value of
 the named environment variable as a string, or #f if the named
 environment variable is not found. The name argument is expected to be
 a string.
@@ -87,7 +87,7 @@ the environment variable.
 If get-environment-variable can't decode the value, get-environment-variable may raise an exception.
 <pre>(get-environment-variable "PATH") =&gt; "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin"
 </pre>
-<pre>Function: get-environment-variables</pre>
+<pre id="get-environment-variables">Function: get-environment-variables</pre>
 Returns names and values of all the environment variables as an a-list.
 The same decoding considerations as for get-environment-variable apply.
 <pre>(get-environment-variables) =&gt; (("PATH" . "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin") ("USERNAME" . "taro"))
